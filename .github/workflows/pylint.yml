@@ -20,5 +20,4 @@ jobs:
         pip install pylint
     - name: Analysing the code with pylint
       run: |
-        python3 -m pip install --user -U flake8-pylint
         pylint `ls -R|grep .py$|xargs`
